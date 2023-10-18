@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <!-- Three dots button -->
+        <button class="bthreedots" onclick="toggleSidebar();" id="td">
+            <img class="threedots" src="assets/t d.png" alt="">
+        </button>
+        <!-- Other topbar elements -->
+        <input type="text" placeholder="search">
+        <button
+            style="margin-left: 50px; height:22px; margin-top:8px; width:30px; border:none; background-color:white; border-top-right-radius: 6px; border-bottom-right-radius: 6px; border-left:groove;  cursor: pointer;">
+            <img class="search" src="assets/search.png" style="height: 20px;">
+        </button>
+        <img src="assets/location.png" style="height: 30px; margin-left:100px; margin-top:4px; cursor: pointer;">
+        <img src="assets/cart.png" style="height: 30px; margin-left:200px; margin-top:4px; cursor: pointer;">
+        <img src="assets/person.png" style="height: 30px; margin-left:270px; margin-top:4px; cursor: pointer;">
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <!-- Add a Cancel button to close the sidebar -->
+        <button class="cancel-btn" onclick="toggleSidebar();">&times;</button>
+        <ul>
+            <li><a href="base.html"> <img style="height: 25px; width:25px;" src="assets/ho.png" alt=""> Home</a></li>
+            <li><a href="#"> <img style="height: 25px; width:25px;" src="assets/au.png" alt=""> About Us</a></li>
+            <li><a href="#"> <img style="height: 25px; width:25px;" src="assets/pd.png" alt=""> Products</a></li>
+            <li><a href="#"> <img style="height: 25px; width:25px;" src="assets/cu.png" alt=""> Contact</a></li>
+        </ul>
+    </div>
+
+    <h1>Cake Box</h1>
+
+    <img src="assets/1.6.jpeg" style="width: 400px; height:200px; margin-left:35%; display:block; border-radius:50%">
+
+    <div style="margin-left: 580px; margin-top:20px">
+        <select id="option">
+            <option value="1">1</option>
+            <option value="1">2</option>
+            <option value="1">3</option>
+            <option value="1">4</option>
+        </select>
+        <button class="buybutton">Buy now</button>
+    </div>
+
+    <h2 class="h2">Similar</h2>
+
+    <img class="n" src="assets/c.jpeg" alt="">
+    <img class="n" src="assets/c2.jpeg" alt="">
+    <img class="n" src="assets/c3.jpeg" alt="">
+    <img class="n" src="assets/c4.jpeg" alt="">
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

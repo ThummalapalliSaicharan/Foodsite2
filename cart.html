@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <div style="background-color: #333; color: #fff; text-align: center; padding: 20px;">
+        <h1>Shopping Cart</h1>
+    </div>
+
+    <div style="width: 80%; margin: 0 auto; padding: 20px;">
+        <table style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th style="background-color: #333; color: #fff; padding: 10px;">Product</th>
+                    <th style="background-color: #333; color: #fff; padding: 10px;">Price</th>
+                    <th style="background-color: #333; color: #fff; padding: 10px;">Quantity</th>
+                    <th style="background-color: #333; color: #fff; padding: 10px;">Total</th>
+                    <th style="background-color: #333; color: #fff; padding: 10px;">Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border: 1px solid #ccc; padding: 10px;">Product 1</td>
+                    <td style="border: 1px solid #ccc; padding: 10px;">$10.00</td>
+                    <td style="border: 1px solid #ccc; padding: 10px;">
+                        <input type="number" value="1" style="width: 40px; text-align: center;">
+                    </td>
+                    <td style="border: 1px solid #ccc; padding: 10px;">$10.00</td>
+                    <td style="border: 1px solid #ccc; padding: 10px;">
+                        <button style="background-color: #f00; color: #fff; border: none; cursor: pointer;">Remove</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ccc; padding: 10px;">Product 2</td>
+                    <td style="border: 1px solid #ccc; padding: 10px;">$20.00</td>
+                    <td style="border: 1px solid #ccc; padding: 10px;">
+                        <input type="number" value="2" style="width: 40px; text-align: center;">
+                    </td>
+                    <td style="border: 1px solid #ccc; padding: 10px;">$40.00</td>
+                    <td style="border: 1px solid #ccc; padding: 10px;">
+                        <button style="background-color: #f00; color: #fff; border: none; cursor: pointer;">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="text-align: right; margin-top: 20px;">
+            <strong>Total: $50.00</strong>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <button style="background-color: #007BFF; color: #fff; padding: 10px 20px; border: none; cursor: pointer;">Checkout</button>
+        </div>
+    </div>
+</body>
+</html>

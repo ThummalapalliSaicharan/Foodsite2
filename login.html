@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="css/style.css">
+   <style> body{background-image: url("assets/loginbackground.png");
+}</style>
+</head>
+
+<body>
+<nav class="navbar" style="background-color:#5CDB95;  display: flex;height:50px;margin-bottum:0%;" onmouseover="typeWriter()">
+    <div class="logo" style="color:white;font-size:25px;margin-top:13px;margin-left:60px;">Food site</div>
+      <ul class="nav-links">
+            <div class="menu">
+    <a class="home" href="home.html"  >Home</a>&nbsp;&nbsp;
+ <a class="about" href="about.html" >About</a>
+                <a class="contact" href="contact.html" >Contact us</a>&nbsp;
+
+  <button class="login">Login</button>
+</div>
+
+
+    <div class="log" id="div1" style="margin-left:35%">
+        <form class="box" onsubmit="return validation2();" action="login.html">
+            <br>
+
+            <span class="title">Login</span>
+            <br><br><br><br>
+            <label class="l1" for="userid">USER ID <em>:</em></label>
+            <input class="in1" id="in1" type="text" placeholder="" required>
+            <br><br><br>
+            <label class="l2" for="userid">PASSWORD :</label>
+            <input class="in2" id="in2" type="password" placeholder="" required>
+            <br><br><br><br><br><br>
+            <span class="forgot">forgot password</span>
+           <button class="loginbtn" id="login" onclick="validation();">Login</button>
+            </form>
+
+    </div>
+<script src="js/script.js"></script>
+</body>
+
+</html>

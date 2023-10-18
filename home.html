@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500family=Pacificofamily=Playballfamily=Satisfydisplay=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+<body style="background-image: url('/assets/homebg.png'); margin-left:0%;margin-top:0%;margin-right:0%;">
+<nav class="navbar" style="background-color:#5CDB95;  display: flex;height:50px;margin-bottum:0%;" onmouseover="typeWriter()">
+    <div class="logo" style="color:white;font-size:25px;margin-top:13px;margin-left:60px;">Food site</div>
+      <ul class="nav-links">
+            <div class="menu">
+    <a class="home" href="home.html" >Home</a>&nbsp;&nbsp;
+ <a class="about" href="about.html" >About</a>
+                <a class="contact" href="contact.html" >Contact us</a>&nbsp;
+
+  <a href="login.html"><button class="login" >Login</button></a>
+</div>
+
+<div class="container" style=" display: inline-block;
+  font-family: 'Caveat';
+  font-size: 40px;margin-top:25%;margin-left:40%;background-color:transparent;">
+  <p class="typed" style="color:#5CDB95;font-size:35px;"></p>
+    <p class="typed" style="color:white;font-size:35px;"></p>
+</div>
+<script>
+  const typedElements = document.querySelectorAll('.typed');
+  const textArray = ["Tasty.", "Hygiene."];
+  let currentIndex = 0;
+
+  function typeText(index) {
+    const element = typedElements[index];
+
+    element.style.animation = 'none'; // Reset animation
+
+    setTimeout(() => {
+      element.style.animation = 'typing 1.5s steps(30, end) forwards';
+
+      element.textContent = ""; // Clear previous text
+
+      const text = textArray[index];
+      let charIndex = 0;
+
+      function typeChar() {
+        if (charIndex < text.length) {
+          element.textContent += text.charAt(charIndex);
+          charIndex++;
+          setTimeout(typeChar, 50); // Delay between typing each character
+        } else {
+          setTimeout(() => {
+            element.style.animation = 'none'; // Reset animation after typing
+            currentIndex = (index + 1) % typedElements.length; // Update the currentIndex
+
+            setTimeout(() => {
+              typeText(currentIndex); // Start the next element
+            }, 100); // 3-second pause before starting the next text
+          }, 3000); // Wait for 1.5 seconds (animation duration)
+        }
+      }
+
+      typeChar();
+    }, 1000); // 3-second pause before typing the text
+  }
+
+  typeText(currentIndex); // Start the animation
+
+
+</script>
+
+
+</body>
+</html>

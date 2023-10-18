@@ -1,0 +1,613 @@
+ body {
+     margin-top: 0%;
+     margin-left: 0%;
+     margin-right: 0%;
+     overflow-x: hidden;
+ }
+
+ .topbar {
+     display: grid;
+     grid-template-columns: 100px 1000px 50px 30px 30px 30px;
+     background-color: skyblue;
+     height: 40px;
+ }
+
+ .items {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr ;
+     column-gap: 20px;
+     row-gap: 60px;
+     margin-top: 10px;
+     margin-left: 20px;
+     margin-right: 20px;
+ }
+
+ .bthreedots {
+     height: 40px;
+     width: 50px;
+     margin-left: 15px;
+     background-color: skyblue;
+     border: none;
+     display: inline;
+     cursor: pointer;
+ }
+ .bthreedots:active {
+     background-color: orange;
+     padding-bottom: 2px;
+     background-image: url("https://cdn-icons-png.flaticon.com/128/5610/5610944.png");
+ }
+
+ .threedots {
+     height: 40px;
+     width: 40px;
+ }
+
+ input {
+     height: 20px;
+     width: 1000px;
+     margin-top: 8px;
+     margin-left: 50px;
+     display: inline;
+     border: none;
+     border-top-left-radius: 4px;
+     border-bottom-left-radius: 4px;
+     cursor: pointer;
+ }
+
+ .d1 {
+
+     height: 270px;
+     border: groove;
+     cursor: pointer;
+ }
+
+ .d2 {
+
+     height: 270px;
+     border: groove;
+     cursor: pointer;
+ }
+
+ .d3 {
+
+     height: 270px;
+     border: groove;
+     cursor: pointer;
+ }
+
+ .slideimage {
+     height: 350px;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     margin-top: 10px;
+
+ }
+
+ .img1 {
+     height: 300px;
+     margin-left: 20px;
+     margin-top: 20px;
+     border-radius: 10px;
+     cursor: pointer;
+ }
+
+ .img1:hover {
+     height: 310px;
+ }
+
+ .img2 {
+     height: 300px;
+     margin-left: 20px;
+     margin-top: 20px;
+     border-radius: 10px;
+     cursor: pointer;
+ }
+
+ .img2:hover {
+     height: 310px;
+ }
+
+ .img3 {
+     height: 300px;
+     margin-left: 85px;
+     margin-top: 20px;
+     border-radius: 10px;
+     cursor: pointer;
+ }
+
+ .img3:hover {
+     height: 310px;
+ }
+
+ .s1 {
+     height: 25px;
+     width: 25px;
+     margin-top: 2px;
+     margin-left: 35px;
+ }
+
+ .buybutton {
+     margin-left: 10px;
+     margin-top: 5px;
+     background-color: gray;
+     color: white;
+     border: none;
+     height: 25px;
+     border-radius: 8px;
+     width: 120px;
+     cursor: pointer;
+ }
+
+ .buybutton:active {
+     background-color: orange;
+     padding-top: 4px;
+     background-image: url("https://cdn-icons-png.flaticon.com/128/5610/5610944.png");
+ }
+
+ p {
+     height: 0%;
+     margin-top: 0%;
+     margin-left: 40%;
+     font-weight: bold;
+ }
+
+ .p1 {
+     height: 0%;
+     margin-top: 0%;
+     margin-left: 50px;
+     font-weight: normal;
+ }
+
+ .p2 {
+     height: 0%;
+     margin-top: 0%;
+     margin-left: 70px;
+     font-weight: normal;
+ }
+
+ .p3 {
+     height: 0%;
+     margin-top: 0%;
+     margin-left: 90px;
+     font-weight: normal;
+  }
+  .all{
+    display: inline;
+  }
+  .n{
+   height: 200px;
+   width: 200px;
+   margin-left: 130px;
+   margin-top: 20px;
+   border-radius: 50%;
+  }
+  h1{
+    margin-left: 0%;
+  }
+  .sidebar {
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      top: 0;
+      right: -250px;
+      background-color:rgb(90, 223, 230);
+      padding-top: 20px;
+      z-index: 1;
+      transition: all 0.3s ease-in-out;
+  }
+
+  /* Styles for the sidebar links */
+  .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+  }
+
+  .sidebar li {
+      padding: 8px 16px;
+    margin-top: 40px;
+  }
+
+  .sidebar a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+    margin-left: 20px;
+  }
+
+  /* Style for the Cancel button */
+  .cancel-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+  }
+
+  /* Show the sidebar when active */
+  .sidebar.active {
+      right: 0;
+  }
+
+  .log {
+      height: 400px;
+      width: 450px;
+      background-color:transparent;
+      margin-left: 550px;
+      margin-top: 150px;
+      border: solid;
+      border-radius: 8px;
+      border-color: white;
+  }
+
+  .l1 {
+      margin-left: 20px;
+      margin-top: 100px;
+      color: white;
+  }
+
+  .l2 {
+      margin-left: 20px;
+      margin-top: 100px;
+        color: white;
+  }
+
+  .title {
+      margin-left: 42%;
+      font-size: 30px;
+      color: white;
+
+  }
+
+  em {
+      font-style: normal;
+      margin-left: 20px;
+  }
+
+
+  .forgot {
+      margin-left: 15px;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+  }
+  .forgot:hover{
+    color: skyblue;
+  }
+
+  
+ .in1{
+    height: 30px;
+    width: 280px;
+    border: solid;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+        color: white;
+ }
+ .in2 {
+     height: 30px;
+     width: 280px;
+     border: solid;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color:transparent;
+    color: white;
+ }
+ .loginbtn{
+    height: 30px;
+    width: 60px;
+    margin-left: 200px;
+    background-color: rgb(96, 96, 242);
+    color: white;
+    border: none;
+    border-radius: 8px;
+ }
+ .loginbtn:active{
+    padding-top: 4px;
+ }
+ 
+ h2{
+    margin-left: 100px;
+    margin-top: 40px;
+ }
+ .h2{
+    margin-left: 700px;
+        margin-top: 40px;
+ }
+ .buy{
+    height: 500px;
+    width: 500px;
+    border-color: black;
+    border: solid;
+    margin-left: 35%;
+    margin-top: 120px;
+    border-radius: 20px;
+ }
+ .buyh2{
+    margin-left: 38%;
+ }
+ .addtocart{
+    background-color:gray;
+    height: 25px;
+    width: 120px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+ }
+  .addtocart:active {
+      background-color: orange;
+      padding-bottom: 2px;
+      background-image: url("https://cdn-icons-png.flaticon.com/128/5610/5610944.png");
+  }
+ .logp{
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 60px;
+ }
+ .placeorderbtn{
+    margin-left: 40%;
+    height: 30px;
+    width: 100px;
+    border-radius: 6px;
+    background-color: greenyellow;
+ }
+ .placeorderbtn:active{
+ height:28px ;
+ width: 90px ;
+ margin-top: 2px;
+ }
+ .placeorderbtn:hover {
+     background-color: aqua;
+ }
+
+       
+
+     
+    /* Style for cart items in a row */
+        .cart-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .cart-item {
+            flex-basis: 400px;
+            /* Adjust the width as needed */
+            flex-direction: column ;
+            
+            margin: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    
+        .remove-btn {
+            margin-top: 10px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            font-size: 14px;
+            height: 30px;
+            cursor: pointer;
+            margin-left: 120px;
+        }
+    
+        .remove-btn:hover {
+            background-color: #d32f2f;
+        }
+ 
+                /* CSS for the billing form */
+                form#billing-form {
+                    max-width: 400px;
+                    margin: 20px auto;
+                    padding: 20px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    background-color: #f9f9f9;
+                }
+        
+                form#billing-form label {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+        
+                form#billing-form input[type="text"],
+                form#billing-form input[type="email"],
+               form#billing-form textarea {
+                    width: 250px;
+                    padding: 8px;
+                    margin-bottom: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                }
+        
+                form#billing-form button[type="submit"] {
+                    background-color: #4CAF50;
+                    color: #fff;
+                    height: 40px;
+                    margin-left: 130px;
+                    border-radius: 4px;
+                    padding: 10px 15px;
+                    cursor: pointer;
+                }
+        
+                form#billing-form button[type="submit"]:hover {
+                    background-color: #45a049;
+                }
+        
+  /* CSS for order-items container */
+  .order-items {
+      margin: 20px auto;
+      max-width: 600px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }
+
+  /* CSS for individual order item */
+  .order-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+
+  .order-item img {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+  }
+
+  .order-item p {
+      margin: 0;
+  }
+
+  .order-item span {
+      margin-left: auto;
+  }
+
+  /* CSS for total cost details */
+  .order-total {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+  }
+
+  /* Optional: Styling for headings and other elements in placeorder.html */
+  h1 {
+      text-align: center;
+  }
+
+
+  /* Basic styles for product container */
+  .product {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+      max-width: 300px;
+  }
+
+  /* Heading styles */
+  .product h2 {
+      margin: 0;
+  }
+
+  /* Price styles */
+  .product p {
+      margin: 5px 0;
+  }
+
+  /* Quantity input styles */
+  .product input[type="number"] {
+      width: 60px;
+      padding: 5px;
+      margin-bottom: 10px;
+  }
+
+  /* Order summary styles */
+  .order-summary {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-top: 20px;
+      max-width: 300px;
+  }
+
+  /* Total items and price styles */
+  .order-summary p {
+      margin: 5px 0;
+  }
+
+  /* Final price styles */
+  .order-summary p span {
+      font-weight: bold;
+  }
+
+  .cost{
+    height: 30px;
+    width: 200px;
+    border: solid;
+    font-size: 16px;
+    color: black;
+  }
+  .cost2{
+    display: block;
+    height: 30px;
+    width: 80px;
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+  .cost2:active{
+    height: 26px;
+    width: 75px;
+  }
+  .displaytotal{
+    height: 500px;
+    width: 500px;
+    border: solid;
+    margin-left: 40%;
+    margin-top: 40px;
+    border-radius: 10px;
+
+  }
+
+  .ac{
+    margin-left: 180px;
+    margin-top: 100px;
+  }
+  
+
+  li {
+      list-style-type: none;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  a:hover {
+      color: #05386B;
+  }
+
+  .home {
+      line-height: 20px;
+      font-size: 18px;
+      text-decoration: none;
+      color: white;
+      margin-left: 500px;
+  }
+
+  .about {
+      line-height: 20px;
+      font-size: 18px;
+      text-decoration: none;
+      color: white;
+      margin-left: 100px;
+  }
+
+  .contact {
+      line-height: 20px;
+      font-size: 18px;
+      text-decoration: none;
+      color: white;
+      margin-left: 100px;
+  }
+
+  .login{
+      background-color: #5CDB95;
+      color: white;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      height: 20px;
+      width: 50px;
+      margin-top: 0px;
+      line-height: 0px;
+      margin-left: 100px;
+  }
+
+ 
